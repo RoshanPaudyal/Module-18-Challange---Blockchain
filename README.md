@@ -31,22 +31,30 @@ The Streamlit application includes several user input areas that allow users to 
 - Amount: The amount of cryptocurrency being transferred in the financial transaction.
 
 #### Testing
-Once you have completed the updates to the PyChain ledger, you can test the system by running the Streamlit application and entering financial transaction information. You can then view the updated ledger to verify that the transaction has been recorded accurately.
+The completed PyChain ledger can be tested by adding several blocks to the ledger using the Streamlit application. Once multiple blocks have been added, the integrity of the ledger can be verified by checking that the hash of each block matches the previous block's hash.
+Run the Streamlit application by executing the following command in your terminal:
+- streamlit run pychain.py
+- In the Streamlit application, click on the "Add Block" button to add a new block to the PyChain ledger.
+- In the input fields provided, enter the following details for the transaction:
+- Sender: The name of the person sending the funds.
+- Receiver: The name of the person receiving the funds.
+- Amount: The amount of funds being transferred.
+- Click on the "Add Block" button again to store the transaction in the ledger.
+- Repeat steps 4-5 to add more blocks to the PyChain ledger.
 
 #### Functionality
 PyChain allows users to add blocks to the blockchain by inputting the sender, receiver, and amount of a transaction. The blockchain is validated using proof-of-work and the difficulty can be adjusted using a slider. The Streamlit application also includes a block inspector that allows users to select a block and view its details.
 
 ##### Screenshot
-Here is a screenshot of the PyChain Streamlit application:
+![image](https://user-images.githubusercontent.com/116679505/230906991-51863276-420d-443b-a36a-f6dfa655b877.png)
+
 
 PyChain Screenshot
 
 #### Validating the Blockchain
-To validate the blockchain, simply click the "Validate Chain" button in the Streamlit application. If the blockchain is valid, the application will display "Blockchain is Valid."
+To validate the blockchain, simply click the "Validate Chain" button in the Streamlit application. If the blockchain is valid, the application will display "True"
+![image](https://user-images.githubusercontent.com/116679505/230907161-ceb6fbe0-923a-4bf6-816f-b3e8147ead2d.png)
 
-Here is a screenshot of the Streamlit application page displaying "Blockchain is Valid":
-
-Validating the Blockchain
 
 #### Conclusion
 PyChain is a powerful blockchain-based ledger system that allows partner banks to conduct financial transactions and verify the integrity of the data in the ledger. With its user-friendly web interface built with Streamlit, PyChain is easy to use and accessible to anyone.
